@@ -16,6 +16,12 @@ export default function PomodoroTimer () {
         return `${formattedMinutes}:${formattedSeconds}`;
     }
 
+    const resetTimer = (interval) => {
+        setIsCounting(false)
+        setTime(interval)
+        return interval
+    }
+
     const toggleCountdown = () => {
         setIsCounting(!isCounting); // Toggle the countdown
     };
@@ -47,19 +53,19 @@ export default function PomodoroTimer () {
             <div className="pomodoro-clock">{secondsToMinutes(time)}</div>
             
             <div className="pomodoro-button-area">
-                <div className="pomodoro-backward-button">
+                <button className="pomodoro-backward-button" onClick={(e) => {resetTimer(1500)}} >
                     <i className="fa fa-backward"></i>
-                </div>
-                <div className="pomodoro-play-pause-button" onClick={toggleCountdown}>
+                </button>
+                <button className="pomodoro-play-pause-button" onClick={toggleCountdown}>
                     { isCounting ? (
                         <i className="fa fa-pause"></i>
                     ): (
                         <i className="fa fa-play"></i>
                     )}
-                </div>
-                <div className="pomodoro-forward-button">
+                </button>
+                <button className="pomodoro-forward-button">
                     <i className="fa fa-forward"></i>
-                </div>
+                </button>
             </div>
 
         </div>

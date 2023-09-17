@@ -4,6 +4,11 @@
     --watch-color: green;
 }
 
+button {
+    background: none;
+    color: var(--watch-colors);
+}
+
 .pomodoro-timer-class {
     color: var(--watch-color);
 }
