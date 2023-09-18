@@ -52,7 +52,7 @@ button {
     /* border-radius: 50%; */
 }
 
-.pomodoro-clock:hover, .pomodoro-backward-button:hover, .pomodoro-break-button:hover, .pomodoro-play-pause-button:hover {
+.pomodoro-backward-button:hover, .pomodoro-break-button:hover, .pomodoro-play-pause-button:hover {
     cursor: pointer;
 }
 
