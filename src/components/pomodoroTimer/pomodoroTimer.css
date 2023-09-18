@@ -11,6 +11,11 @@ button {
 
 .pomodoro-timer-class {
     color: var(--watch-color);
+    /* border: solid red 5px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .pomodoro-clock {
