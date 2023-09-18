@@ -25,6 +25,10 @@ export default function PomodoroTimer () {
     const toggleCountdown = () => {
         setIsCounting(!isCounting); // Toggle the countdown
     };
+
+    const takeBreak = () => {
+        setTime(300)
+    }
     
     useEffect(() => {
         let intervalId;
@@ -63,8 +67,7 @@ export default function PomodoroTimer () {
                         <i className="pomodoro-play-pause-button fas fa-play-circle play-icon"></i>
                     )}
                 </button>
-                <button className="pomodoro-forward-button">
-                    {/* <i className="fa fa-forward"></i> */}
+                <button className="pomodoro-break-button" onClick={takeBreak}>
                     <i className="fas fa-coffee coffee-icon"></i>
                 </button>
             </div>
