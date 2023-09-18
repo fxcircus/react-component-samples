@@ -36,7 +36,7 @@ button {
     align-items: center;
     height: 25px;
     width: 25px;
-    /* margin: 0 2px; */
+    margin: 0 2px;
     border: solid 2px var(--watch-color);
     border-radius: 50%;
 }
