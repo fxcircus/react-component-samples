@@ -45,12 +45,17 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 35px;
-    width: 35px;
-    border: solid 2px var(--watch-color);
-    border-radius: 50%;
+    font-size: xx-large;
+    /* height: 35px; */
+    /* width: 35px; */
+    /* border: solid 2px var(--watch-color); */
+    /* border-radius: 50%; */
 }
 
 .pomodoro-clock:hover, .pomodoro-backward-button:hover, .pomodoro-forward-button:hover, .pomodoro-play-pause-button:hover {
     cursor: pointer;
+}
+
+.pomodoro-play-pause-area {
+    border: none;
 }

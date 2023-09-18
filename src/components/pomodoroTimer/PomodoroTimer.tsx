@@ -54,17 +54,18 @@ export default function PomodoroTimer () {
             
             <div className="pomodoro-button-area">
                 <button className="pomodoro-backward-button" onClick={(e) => {resetTimer(1500)}} >
-                    <i className="fa fa-backward"></i>
+                    <i className="fas fa-undo"></i>
                 </button>
-                <button className="pomodoro-play-pause-button" onClick={toggleCountdown}>
+                <button className="pomodoro-play-pause-area" onClick={toggleCountdown}>
                     { isCounting ? (
-                        <i className="fa fa-pause"></i>
+                        <i className="pomodoro-play-pause-button fas fa-pause-circle pause-circle-icon"></i>
                     ): (
-                        <i className="fa fa-play"></i>
+                        <i className="pomodoro-play-pause-button fas fa-play-circle play-icon"></i>
                     )}
                 </button>
                 <button className="pomodoro-forward-button">
-                    <i className="fa fa-forward"></i>
+                    {/* <i className="fa fa-forward"></i> */}
+                    <i className="fas fa-coffee coffee-icon"></i>
                 </button>
             </div>
 
